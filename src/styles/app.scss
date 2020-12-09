@@ -1,0 +1,17 @@
+@import 'variables';
+@import 'mixins';
+@import 'base';
+
+@import "../components/LoadingSpinner/loadingSpinner";
+@import "../components/Product/product";
+@import "../components/Cart/cart";
+
+#ads-checkout-root {
+  margin: 0 auto;
+  padding: 0 1.5rem;
+
+  @include breakpoint($md) {
+    width: 80%;
+    max-width: $md-max-width;
+  }
+}

@@ -1,0 +1,31 @@
+.cart {
+  border-top: 5px solid $secondary;
+  margin-top: 2rem;
+}
+
+.cart-product {
+  align-items: center;
+  display: flex;
+
+  &__name {
+    flex-grow: 1;
+    padding: 0 1rem;
+  }
+}
+
+.cart-summary {
+  border: 1px solid $grey;
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  padding: 2rem;
+
+  &__item {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    &-label {
+      margin: 1rem;
+    }
+  }
+}

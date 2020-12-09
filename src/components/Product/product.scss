@@ -1,0 +1,32 @@
+.product {
+  &__quantity-input {
+    max-width: 5rem;
+    margin: 0 1rem;
+  }
+
+  &__add-button {
+    margin-top: 1rem;
+    width: 100%;
+
+    @include breakpoint($md) {
+      margin: 0;
+      width: auto;
+    }
+  }
+
+  &__promo-description {
+    color: $primary;
+    font-weight: bold;
+  }
+
+  &__price {
+    &--discounted {
+      color: $primary;
+      font-weight: bold;
+    }
+    &--promo-applied {
+      text-decoration: line-through;
+      margin-right: 1rem;
+    }
+  }
+}

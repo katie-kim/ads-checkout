@@ -1,0 +1,11 @@
+@mixin breakpoint($point) {
+  @media (min-width: $point) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max($point) {
+  @media (max-width: $point - 1) {
+    @content;
+  }
+}
